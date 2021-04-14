@@ -62,7 +62,7 @@ curl --location --request POST 'http://localhost:8000/submitstar' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "address" : "tb1qfwdwn9gk2qv0n29rxt63afdx4agxq40xdwye9n",
-    "signature" : "HyHHUWtUhA3F0oV3z4RTzXnhEeZ5ye3AWLi2ao3TLmcoQQzrhiQPEjP16xWI8hIAa69d7VfRMcXF/h/lAUSE8Eg=",
+    "signature" : "IAdbcvtdAzlNT3fkd01yvrLypFZgB9XVkwVs2HBhQqA/Kn5TLFq/zcwnElJ3TjSCZvb7lYP2b6GUyVEIKZHbP+s=",
     "message" : "tb1qfwdwn9gk2qv0n29rxt63afdx4agxq40xdwye9n:1617938746:starRegistry",
     "star" : {
         "dec" : "68 52 56.9",
