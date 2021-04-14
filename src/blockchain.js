@@ -103,8 +103,8 @@ class Blockchain {
         return new Promise((resolve) => {
             // message format: <WALLET_ADDRESS>:${new Date().getTime().toString().slice(0,-3)}:starRegistry
             var unSignedMessage = `${address}:${new Date().getTime().toString().slice(0, -3)}:starRegistry`;
-            console.log('Requesting Ownership, Sign with Wallet: ' + message);
-            resolve(message);
+            console.log('Requesting Ownership, Sign with Wallet: ' + unSignedMessage);
+            resolve(unSignedMessage);
         });
     }
 
@@ -137,7 +137,7 @@ class Blockchain {
             //3
             if((currentTime - messageTime) >= 300){
                 reject(new Error('submitStar: Must sign message within 5 minutes, transaction failed.'));
-                reject(block);
+                //reject(block);
                 return;
             }
             else{
